@@ -1,4 +1,4 @@
 use ral;
 fn main() {
-    ral::spin_lock::run();
+    ral::one_sort_channel::run();
 }
