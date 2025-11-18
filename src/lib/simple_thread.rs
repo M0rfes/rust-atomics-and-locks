@@ -4,8 +4,8 @@ pub fn run() {
     let tq = thread::spawn(f);
     let t2 = thread::spawn(f);
     println!("Hello from the main thread.");
-    tq.join();
-    t2.join();
+    tq.join().unwrap();
+    t2.join().unwrap();
 }
 
 fn f() {

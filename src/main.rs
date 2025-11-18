@@ -1,4 +1,4 @@
 use ral;
 fn main() {
-    ral::cond_var::run();
+    ral::spin_lock::run();
 }
